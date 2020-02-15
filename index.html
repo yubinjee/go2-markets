@@ -14,14 +14,11 @@
     <body>
         
         <header class="gm_header">
-
             <div class="gm_header__left">
-
                 <!-- Logo -->
                 <a href="#" class="gm_header__logo" title="Homepage">
                     <img src="assets/img/logo_go2markets.png" />
                 </a>
-
                 <!-- Search bar -->
                 <div class="gm_search-bar">
                     <img 
@@ -30,11 +27,8 @@
                         height="16"
                         width="14" />
                 </div>
-
             </div>
-
             <div class="gm_header__right">
-
                 <!-- Navigation -->
                 <nav class="gm_navigation" role="navigation">
                     <ul class="gm_navigation__list">
@@ -55,7 +49,6 @@
                         </li>
                     </ul>
                 </nav>
-
                 <!-- Profile -->
                 <div class="gm_profile">
                     <img 
@@ -63,33 +56,23 @@
                         alt="Portrait of black male person smiling"
                         width="100%" />
                 </div>
-
             </div>
-
         </header>
 
         <main role="main">
 
             <section class="gm_container gm_section-auction">
-
                 <div class="gm_section-auction__headline-container">
-
                     <div class="gm_section-auction__brief-information">
                         <p class="gm_status is--disabled" id="auctionStatus"></p>
                         <p>·</p>
                         <p>Created at: <span id="createdAt"></span></p>    
-                    </div>
-                              
+                    </div>                         
                     <h1 class="gm_section-auction__headline">Auction #<span id="auctionID"></span></h1>
-
                 </div>
-
                 <div class="gm_section-auction__content-container">
-
-                    <div class="gm_section-auction__auction-container col-xs-3">
-
+                    <div class="col-xs-3 gm_section-auction__auction-container">
                         <h2>Auction</h2>
-
                         <ul class="gm_section-auction__auction-information">
                             <li>
                                 <h3 class="gm_section-auction__label">Deal type</h3>
@@ -108,13 +91,9 @@
                                 <p id="startPrice"></p>
                             </li>
                         </ul>
-
                     </div>
-
-                    <div class="gm_section-auction__order-container col-xs-9">
-
+                    <div class="col-xs-9 gm_section-auction__order-container">
                         <h2>Order</h2>
-
                         <ul class="gm_section-auction__order-information is--important">
                             <li>
                                 <h3 class="gm_section-auction__label">Labels</h3>
@@ -129,9 +108,7 @@
                                 <p id="deliveryDate"></p>
                             </li>
                         </ul>
-
                         <div class="gm_hr"></div>
-
                         <ul class="gm_section-auction__order-information">
                             <li>
                                 <h3 class="gm_section-auction__label">Technologies</h3>
@@ -151,24 +128,25 @@
                                 <p id="support"></p>
                             </li>
                         </ul>
-
                         <div class="gm_hr"></div>
-
                         <ul class="gm_section-auction__order-information is--full-width">
                             <li>
                                 <h3 class="gm_section-auction__label">Origins</h3>
                                 <div class="gm_section-auction__country-container" id="origins"></div>
                             </li>    
-                        </ul>
-                        
-                    </div>
-                    
-                </div>
-                
+                        </ul>                
+                    </div>             
+                </div>            
             </section>
 
-            <section class="gm_section-offer">
-                
+            <section class="gm_container gm_section-offer">
+                <div class="col-xs-3 gm_section-offer__headline-container">
+                    <h2 class="">Offer</h2>
+                </div>
+                <div class="col-xs-9 gm_section-offer__content-container">
+
+                </div>
+
             </section>
 
             <footer class="gm_footer"> 

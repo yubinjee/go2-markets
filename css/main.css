@@ -953,7 +953,15 @@ ul {
     border-radius: 100%;
     border: 1px solid #e2e2e2; }
 
+.gm_section-offer {
+  background: white;
+  padding-top: 104px;
+  margin-top: 104px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px; }
+
 .gm_footer {
+  background: white;
   height: 160px;
   padding: 40px;
   display: flex;
