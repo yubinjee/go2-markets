@@ -2,6 +2,7 @@
     
     <head>
         <script src="data.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
 
     <body>
@@ -9,7 +10,10 @@
     </body>
 
     <script>
-        document.getElementById("auctionStatus").innerHTML = data.auction.auction_status;
+        function writeHTMLContent() {
+            document.getElementById("auctionStatus").innerHTML = data.auction.auction_status;
+        }
+        writeHTMLContent();
     </script>
 
 </html>

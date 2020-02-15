@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/fonts/inter/Inter-Regular.woff.woff') format('woff');
+    font-display: swap; //temporarily show a system font during webfont load
+}
+
+body {
+    background: $lightgreen;
+    max-width: 1440px;
+    font-family: 'Inter Regular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $black;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    //line-height: 1.25;
+}
+h1 {
+    font-size: $headingOne;
+}
+h2 {
+    font-size: $headingTwo;
+}
+h3 {
+    font-size: $headingThree;
+}
+h4 {
+    font-size: $headingFour;
+}
+h5 {
+    font-size: $headingFive;
+}
+h6 {
+    font-size: $headingSix;
+}
+p {
+    $fontSizeMedium: 16px;
+    margin: 0;
+    line-height: 1.8;
+}
+a {
+    color: $black;
+    text-decoration: none;
+}

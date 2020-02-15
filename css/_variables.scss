@@ -1,0 +1,38 @@
+// color variables 
+$lightgreen: #F7F9F6;
+
+$lightgrey: #f6f6f6;
+$grey: #CaCaCa;
+$middlegrey: #ababab;
+$darkgrey: #7A7A7A;
+$black: #212121;
+
+// font size variables 
+$fontSizeExtraLarge: 60px;
+$fontSizeLarge: 48px;
+
+$headingOne: 48px;
+$headingTwo: 36px;
+$headingThree: 28px;
+$headingFour: 24px;
+$headingFive: 20px;
+$headingSix: 18px;
+
+$fontSizeMedium: 16px;
+$fontSizeSmall: 14px;
+$fontSizeExtraSmall: 12px;
+
+//breakpoints
+$breakpointExtraSmall: 0px; //xs
+$breakpointSmall: 600px; //s
+$breakpointSmallMedium: 960px; //sm
+$breakpointMedium: 1024px; // md
+$breakpointLarge: 1280px; //lg
+/*
+Material UI breakpoints
+xs, extra-small: 0px
+sm, small: 600px
+md, medium: 960px
+lg, large: 1280px
+xl, extra-large: 1920px
+*/
