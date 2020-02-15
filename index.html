@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="Description" content="This is a UI demo for GO2-Markets design task by Yu Bin Jee">
 
-        <script src="data.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css">
 
     </head>
@@ -71,17 +70,116 @@
 
         <main role="main">
 
-            <p id="auctionStatus"></p>
+            <section class="gm_container gm_section-auction">
 
-        </main>
+                <div class="gm_section-auction__headline-container">
+
+                    <div class="gm_section-auction__brief-information">
+                        <p class="gm_status is--disabled" id="auctionStatus"></p>
+                        <p>·</p>
+                        <p>Created at: <span id="createdAt"></span></p>    
+                    </div>
+                              
+                    <h1 class="gm_section-auction__headline">Auction #<span id="auctionID"></span></h1>
+
+                </div>
+
+                <div class="gm_section-auction__content-container">
+
+                    <div class="gm_section-auction__auction-container col-xs-3">
+
+                        <h2>Auction</h2>
+
+                        <ul class="gm_section-auction__auction-information">
+                            <li>
+                                <h3 class="gm_section-auction__label">Deal type</h3>
+                                <p id="dealType"></p>
+                            </li>
+                            <li>
+                                <h3 class="gm_section-auction__label">Auction type</h3>
+                                <p id="auctionType"></p>
+                            </li>
+                            <li>
+                                <h3 class="gm_section-auction__label">Deadline</h3>
+                                <p id="deadline"></p>
+                            </li>
+                            <li>
+                                <h3 class="gm_section-auction__label">Start price</h3>
+                                <p id="startPrice"></p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="gm_section-auction__order-container col-xs-9">
+
+                        <h2>Order</h2>
+
+                        <ul class="gm_section-auction__order-information is--important">
+                            <li>
+                                <h3 class="gm_section-auction__label">Labels</h3>
+                                <p id="labels"></p>
+                            </li>
+                            <li>
+                                <h3 class="gm_section-auction__label">Volume</h3>
+                                <p id="volume"></p>
+                            </li>
+                            <li>
+                                <h3 class="gm_section-auction__label">Delivery date</h3>
+                                <p id="deliveryDate"></p>
+                            </li>
+                        </ul>
+
+                        <div class="gm_hr"></div>
+
+                        <ul class="gm_section-auction__order-information">
+                            <li>
+                                <h3 class="gm_section-auction__label">Technologies</h3>
+                                <p><img 
+                                    src="assets/icon/icon--hydro.svg" 
+                                    alt="Hydro energy icon"
+                                    height="15"
+                                    width="10" />
+                                <span id="technologies"></span></p>
+                            </li>
+                            <li>
+                                <h3 class="gm_section-auction__label">Vintage</h3>
+                                <p id="vintage"></p>
+                            </li>
+                            <li>
+                                <h3 class="gm_section-auction__label">support</h3>
+                                <p id="support"></p>
+                            </li>
+                        </ul>
+
+                        <div class="gm_hr"></div>
+
+                        <ul class="gm_section-auction__order-information is--full-width">
+                            <li>
+                                <h3 class="gm_section-auction__label">Origins</h3>
+                                <div class="gm_section-auction__country-container" id="origins"></div>
+                            </li>    
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+
+            <section class="gm_section-offer">
+                
+            </section>
+
+            <footer class="gm_footer"> 
+                <p class="gm_footer__license-notice">Flag icons made by Freepik from www.flaticon.com</p>
+            </footer>
+
+        </main>  
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
      
     </body>
-
-    <script>
-        function writeHTMLContent() {
-            document.getElementById("auctionStatus").innerHTML = data.auction.auction_status;
-        }
-        writeHTMLContent();
-    </script>
 
 </html>

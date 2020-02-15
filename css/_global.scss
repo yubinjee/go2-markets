@@ -1,19 +1,27 @@
-@font-face {
+/*@font-face {
     font-family: 'Inter Regular';
     font-style: normal;
     font-weight: normal;
     src: url('/assets/fonts/inter/Inter-Regular.woff.woff') format('woff');
     font-display: swap; //temporarily show a system font during webfont load
+}*/
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
 }
 
 body {
     background: $lightgreen;
     max-width: 1440px;
-    font-family: 'Inter Regular', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: 'zero' on;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $black;
-    margin: 0;
+    margin: 0;   
+    word-break: break-word;
 }
 h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -40,12 +48,20 @@ h6 {
 p {
     $fontSizeMedium: 16px;
     margin: 0;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 a {
     color: $black;
     text-decoration: none;
 }
+ul {
+    margin: 0;
+}
+.gm_hr {
+    border-bottom: 1px solid $grey;
+}
+
+///////////////////////////////// HEADER /////////////////////////////////
 .gm_header {
     display: flex;
     align-items: center;
@@ -82,7 +98,6 @@ a {
 }
 .gm_navigation__list {
     list-style-type: none;
-    margin: 0;
     padding: 0;
     display: flex;
 }
@@ -90,7 +105,8 @@ a {
     padding: 8px;
     margin: 16px;
     font-size: $fontSizeSmall;
-    color: $darkgrey;
+    color: $middledarkgrey;
+    //font-weight: 500;
     &.is--active {
        font-weight: 600; 
        color: $black;
@@ -102,4 +118,116 @@ a {
     border-radius: 100%;
     overflow: hidden;
     margin-left: 16px;
+}
+
+///////////////////////////////// SECTION AUCTION /////////////////////////////////
+.gm_section-auction {
+    margin-top: 80px;
+}
+.gm_section-auction__headline-container {
+    width: 100%;
+}
+.gm_section-auction__brief-information {
+    font-size: $fontSizeSmall;
+    display: flex;
+    align-items: center;
+    color: $middledarkgrey;
+    margin: 0 -8px;
+    p {
+        margin: 0 8px;
+    }
+}
+.gm_status {  
+    font-weight: 600;
+    color: $darkgrey;
+    background: $grey;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+.gm_section-auction__headline {
+    margin-top: 16px;
+}
+.gm_section-auction__content-container {
+    display: flex;
+    width: 100%;
+    margin: 80px -10px 0;
+    h2 {
+        font-size: $headingFour;
+    }
+}
+.gm_section-auction__auction-information {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: -24px;
+    li {
+        margin-top: 24px;
+    }
+    p {
+        margin-top: 8px;
+        font-size: $headingFive;
+    }
+}
+.gm_section-auction__order-container {
+    .gm_hr {
+        margin-top: 56px;
+    }
+}
+.gm_section-auction__order-information {
+    list-style-type: none;
+    padding: 0;
+    margin: 40px -16px 0;
+    display: flex;
+    li {
+        width: 33.33333333%;
+        padding: 0 16px;
+    }
+    p {
+        margin-top: 8px;
+        font-size: $headingThree;
+    }
+    &.is--important {
+        p {
+            margin-top: 24px;
+            font-size: $headingOne;
+        }
+    }
+    &.is--full-width {
+        li {
+            width: 100%;
+        }
+    }
+}
+.gm_section-auction__label {
+    font-size: $fontSizeSmall;
+    color: $middledarkgrey;
+    font-weight: 500;
+}
+.gm_section-auction__country-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px -4px 0;
+    color: $middledarkgrey;
+    font-size: $fontSizeSmall;
+}
+.gm_section-auction__country {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    img {
+        margin-bottom: 4px;
+        border-radius: 100%;
+        border: 1px solid $middlelightgrey;
+    }
+}
+
+.gm_footer {
+    height: 160px;
+    padding: 40px;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: $fontSizeSmall;
+    color: $grey;
 }

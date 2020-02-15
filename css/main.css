@@ -6,10 +6,10 @@ md, medium: 960px
 lg, large: 1280px
 xl, extra-large: 1920px
 */
+@import url("https://rsms.me/inter/inter.css");
 .gm_container {
   padding: 0 5%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
 
@@ -756,49 +756,64 @@ xl, extra-large: 1920px
   clear: both;
 }
 */
-@font-face {
-  font-family: 'Inter Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: url("/assets/fonts/inter/Inter-Regular.woff.woff") format("woff");
-  font-display: swap; }
+/*@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/assets/fonts/inter/Inter-Regular.woff.woff') format('woff');
+    font-display: swap; //temporarily show a system font during webfont load
+}*/
+html {
+  font-family: 'Inter', sans-serif; }
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif; } }
 body {
   background: #F7F9F6;
   max-width: 1440px;
-  font-family: 'Inter Regular', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'zero' on;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #212121;
-  margin: 0; }
+  margin: 0;
+  word-break: break-word; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 h1 {
-  font-size: 48px; }
-
-h2 {
   font-size: 36px; }
 
-h3 {
+h2 {
   font-size: 28px; }
 
-h4 {
+h3 {
   font-size: 24px; }
 
-h5 {
+h4 {
   font-size: 20px; }
 
-h6 {
+h5 {
   font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
 
 p {
   margin: 0;
-  line-height: 1.8; }
+  line-height: 1.5; }
 
 a {
   color: #212121;
   text-decoration: none; }
+
+ul {
+  margin: 0; }
+
+.gm_hr {
+  border-bottom: 1px solid #CaCaCa; }
 
 .gm_header {
   display: flex;
@@ -834,7 +849,6 @@ a {
 
 .gm_navigation__list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   display: flex; }
 
@@ -853,5 +867,99 @@ a {
   border-radius: 100%;
   overflow: hidden;
   margin-left: 16px; }
+
+.gm_section-auction {
+  margin-top: 80px; }
+
+.gm_section-auction__headline-container {
+  width: 100%; }
+
+.gm_section-auction__brief-information {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #7A7A7A;
+  margin: 0 -8px; }
+  .gm_section-auction__brief-information p {
+    margin: 0 8px; }
+
+.gm_status {
+  font-weight: 600;
+  color: #464646;
+  background: #CaCaCa;
+  padding: 2px 8px;
+  border-radius: 6px; }
+
+.gm_section-auction__headline {
+  margin-top: 16px; }
+
+.gm_section-auction__content-container {
+  display: flex;
+  width: 100%;
+  margin: 80px -10px 0; }
+  .gm_section-auction__content-container h2 {
+    font-size: 20px; }
+
+.gm_section-auction__auction-information {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: -24px; }
+  .gm_section-auction__auction-information li {
+    margin-top: 24px; }
+  .gm_section-auction__auction-information p {
+    margin-top: 8px;
+    font-size: 18px; }
+
+.gm_section-auction__order-container .gm_hr {
+  margin-top: 56px; }
+
+.gm_section-auction__order-information {
+  list-style-type: none;
+  padding: 0;
+  margin: 40px -16px 0;
+  display: flex; }
+  .gm_section-auction__order-information li {
+    width: 33.33333333%;
+    padding: 0 16px; }
+  .gm_section-auction__order-information p {
+    margin-top: 8px;
+    font-size: 24px; }
+  .gm_section-auction__order-information.is--important p {
+    margin-top: 24px;
+    font-size: 36px; }
+  .gm_section-auction__order-information.is--full-width li {
+    width: 100%; }
+
+.gm_section-auction__label {
+  font-size: 14px;
+  color: #7A7A7A;
+  font-weight: 500; }
+
+.gm_section-auction__country-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px -4px 0;
+  color: #7A7A7A;
+  font-size: 14px; }
+
+.gm_section-auction__country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px; }
+  .gm_section-auction__country img {
+    margin-bottom: 4px;
+    border-radius: 100%;
+    border: 1px solid #e2e2e2; }
+
+.gm_footer {
+  height: 160px;
+  padding: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 14px;
+  color: #CaCaCa; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,10 @@
 var data = {
     "auction": {
-        "auction_status": "CLOSED",
-        "auction_type": "OPEN",
+        "auction_status": "Closed",
+        "auction_type": "Open",
         "created_at": "2020-01-27T16:02:18.761311+01:00",
         "deadline": "2020-01-31T12:13:00+01:00",
-        "deal_type": "BUYING",
+        "deal_type": "Buying",
         "id": 203,
         "ref": "X48CDKVFPYHK",
         "start_price": "12.0000"
@@ -44,7 +44,7 @@ var data = {
         ],
         "support": true,
         "technologies": [
-            "HYDRO"
+            "Hydro"
         ],
         "vintage": 2021,
         "volume": "123123"
