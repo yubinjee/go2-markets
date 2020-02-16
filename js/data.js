@@ -2,19 +2,19 @@ var data = {
     "auction": {
         "auction_status": "Closed",
         "auction_type": "Open",
-        "created_at": "2020-01-27T16:02:18.761311+01:00",
-        "deadline": "2020-01-31T12:13:00+01:00",
+        "created_at": "2020-01-27 16:02:18",
+        "deadline": "2020-01-31 12:13:00 ",
         "deal_type": "Buying",
         "id": 203,
         "ref": "X48CDKVFPYHK",
-        "start_price": "12.0000"
+        "start_price": "120,000"
     },
     
     "order": {
         "delivery_date": "2022-03",
         "id": 229,
         "labels": [
-            "T\u00dcV_S\u00dcD_EE01_&_EE02"
+            "T\u00dcV_S\u00dcD"
         ],
         "origins": [
             "BE",
@@ -47,7 +47,7 @@ var data = {
             "Hydro"
         ],
         "vintage": 2021,
-        "volume": "123123"
+        "volume": "123,123"
     },
 
     "offers": [
@@ -59,7 +59,7 @@ var data = {
             "price": "23.0000",
             "ref": "0FG9VSR4E5FL",
             "technologies": [
-                "HYDRO"
+                "Hydro"
             ],
             "volume": "23"
         },
@@ -71,7 +71,7 @@ var data = {
             "price": "666.0000",
             "ref": "RWM88CPRI9H1",
             "technologies": [
-                "HYDRO"
+                "Hydro"
             ],
             "volume": "7676"
         },
@@ -83,7 +83,7 @@ var data = {
             "price": "3212.0000",
             "ref": "140MBONPELWM",
             "technologies": [
-                "HYDRO"
+                "Hydro"
             ],
             "volume": "23"
         },
@@ -95,7 +95,7 @@ var data = {
             "price": "13232.0000",
             "ref": "LPE2PRWUTW8Z",
             "technologies": [
-                "HYDRO"
+                "Hydro"
             ],
             "volume": "12"
         },
@@ -107,7 +107,7 @@ var data = {
             "price": "13232.0000",
             "ref": "824TNR2I5MU9",
             "technologies": [
-                "HYDRO"
+                "Hydro"
             ],
             "volume": "12"
         }
@@ -125,7 +125,7 @@ var data = {
                 "price": "23.0000",
                 "ref": "0FG9VSR4E5FL",
                 "technologies": [
-                    "HYDRO"
+                    "Hydro"
                 ],
                 "volume": "23"
             },
@@ -143,7 +143,7 @@ var data = {
                 "price": "23.0000",
                 "ref": "2G81GXPEP1C3",
                 "technologies": [
-                    "HYDRO"
+                    "Hydro"
                 ],
                 "volume": "23"
             },
@@ -161,7 +161,7 @@ var data = {
                 "price": "666.0000",
                 "ref": "RWM88CPRI9H1",
                 "technologies": [
-                    "HYDRO"
+                    "Hydro"
                 ],
                 "volume": "2"
             },
@@ -179,7 +179,7 @@ var data = {
                 "price": "3212.0000",
                 "ref": "140MBONPELWM",
                 "technologies": [
-                    "HYDRO"
+                    "Hydro"
                 ],
                 "volume": "23"
             },
@@ -197,7 +197,7 @@ var data = {
                 "price": "13232.0000",
                 "ref": "LPE2PRWUTW8Z",
                 "technologies": [
-                    "HYDRO"
+                    "Hydro"
                 ],
                 "volume": "12"
             },
@@ -215,7 +215,7 @@ var data = {
                 "price": "13232.0000",
                 "ref": "824TNR2I5MU9",
                 "technologies": [
-                    "HYDRO"
+                    "Hydro"
                 ],
                 "volume": "12"
             },

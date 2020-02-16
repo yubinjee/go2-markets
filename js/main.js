@@ -1,15 +1,3 @@
-// Check if data.order.support is true or false.
-function checkSupport(){
-    //If true, write Yes.
-    if(data.order.support){
-        return "Yes";
-    }
-    //If false write No.
-    else{
-        return "No";
-    }
-}
-
 function writeHTMLContent() {
 
     document.getElementById("auctionStatus").innerHTML = data.auction.auction_status;
@@ -22,15 +10,17 @@ function writeHTMLContent() {
     document.getElementById("startPrice").innerHTML = data.auction.start_price;
 
     document.getElementById("labels").innerHTML = data.order.labels;
-    document.getElementById("volume").innerHTML = data.order.volume + " " + "MWh";
+    document.getElementById("volume").innerHTML = data.order.volume;
     document.getElementById("deliveryDate").innerHTML = data.order.delivery_date;
     document.getElementById("technologies").innerHTML = data.order.technologies;
     document.getElementById("vintage").innerHTML = data.order.vintage;
-    document.getElementById("support").innerHTML = checkSupport();
+    document.getElementById("support").innerHTML = data.order.support ? "Yes" : "No";
 
 }
 
 writeHTMLContent();
+
+
 
 
 // Create new div element for each countries in data.order.origins
@@ -38,20 +28,20 @@ function createCountries(){
     
     var countries = data.order.origins;
 
-    for (var c in countries) {
+    for (var country in countries) {
 
-        var countryName = countries[c];
+        var countryName = countries[country];
 
         //Create div with id and classname
-        var newDiv = document.createElement("div");
-        newDiv.id = countryName;
-        newDiv.className = "gm_section-auction__country";
+        var countryWrapperElement = document.createElement("div");
+        countryWrapperElement.id = countryName;
+        countryWrapperElement.className = "gm_section-auction__country";
 
         //Write in this div the country name
-        newDiv.innerHTML = countryName;
+        countryWrapperElement.innerHTML = countryName;
 
         //Put the div into DOM
-        document.getElementById("origins").appendChild(newDiv);
+        document.getElementById("origins").appendChild(countryWrapperElement);
 
         //add flag img
         var flag = document.createElement("IMG");
@@ -65,5 +55,56 @@ function createCountries(){
 
 }      
 
-
 createCountries();
+
+
+
+
+// Create new table row for each offers in data.offers
+function createOffers(){
+
+    var offers = data.offers;
+
+    for (var offer in offers) {
+
+        var offer = offers[offer];
+
+        //Create new table row and add the offer id as id
+        var tableRowElement = document.createElement("tr");
+        tableRowElement.id = offer.id;
+
+        //Put the table row into the table body
+        document.getElementById("offerTable").appendChild(tableRowElement);
+
+        //Create table datas
+
+        //Id
+        var tableDataElement = document.createElement("td");
+        tableDataElement.innerHTML = offer.id;
+        document.getElementById(offer.id).appendChild(tableDataElement);
+
+        //Technologies
+        var tableDataElement = document.createElement("td");
+        tableDataElement.innerHTML = offer.technologies;
+        document.getElementById(offer.id).appendChild(tableDataElement);
+
+        //Status
+        var tableDataElement = document.createElement("td");
+        document.getElementById(offer.id).appendChild(tableDataElement);
+        var offerIDIsInTransactions = data.transactions.find(function (currentTransaction) {
+            return currentTransaction.offer.id === offer.id
+          });
+        if (offerIDIsInTransactions) {
+            return "Traded"
+            } 
+        else {
+            return "Pending"
+        }
+        
+    
+
+    }
+
+}
+
+createOffers();

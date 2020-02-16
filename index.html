@@ -80,14 +80,21 @@
                             </li>
                             <li>
                                 <h3 class="gm_section-auction__label">Auction type</h3>
-                                <p id="auctionType"></p>
+                                <p class="is--with-icon">
+                                    <img 
+                                    src="assets/icon/icon--eye.svg" 
+                                    alt="Opened eye icon"
+                                    height="18"
+                                    width="18" />
+                                    <span id="auctionType"></span>
+                                </p>
                             </li>
                             <li>
                                 <h3 class="gm_section-auction__label">Deadline</h3>
                                 <p id="deadline"></p>
                             </li>
                             <li>
-                                <h3 class="gm_section-auction__label">Start price</h3>
+                                <h3 class="gm_section-auction__label">Start price (€)</h3>
                                 <p id="startPrice"></p>
                             </li>
                         </ul>
@@ -100,7 +107,7 @@
                                 <p id="labels"></p>
                             </li>
                             <li>
-                                <h3 class="gm_section-auction__label">Volume</h3>
+                                <h3 class="gm_section-auction__label">Volume (MWh)</h3>
                                 <p id="volume"></p>
                             </li>
                             <li>
@@ -112,12 +119,14 @@
                         <ul class="gm_section-auction__order-information">
                             <li>
                                 <h3 class="gm_section-auction__label">Technologies</h3>
-                                <p><img 
-                                    src="assets/icon/icon--hydro.svg" 
-                                    alt="Hydro energy icon"
-                                    height="15"
-                                    width="10" />
-                                <span id="technologies"></span></p>
+                                <p class="is--with-icon">
+                                    <img 
+                                    src="assets/icon/icon--water-drop.svg" 
+                                    alt="Water drop icon"
+                                    height="18"
+                                    width="12" />
+                                    <span id="technologies"></span>
+                                </p>
                             </li>
                             <li>
                                 <h3 class="gm_section-auction__label">Vintage</h3>
@@ -125,7 +134,14 @@
                             </li>
                             <li>
                                 <h3 class="gm_section-auction__label">support</h3>
-                                <p id="support"></p>
+                                <p>
+                                    <img 
+                                    src="assets/icon/icon--check.svg" 
+                                    alt="Check icon"
+                                    height="18"
+                                    width="14" />
+                                    <span id="support"></span>
+                                </p>
                             </li>
                         </ul>
                         <div class="gm_hr"></div>
@@ -140,11 +156,24 @@
             </section>
 
             <section class="gm_container gm_section-offer">
-                <div class="col-xs-3 gm_section-offer__headline-container">
+                <div class="col-xs-12 gm_section-offer__headline-container">
                     <h2 class="">Offer</h2>
                 </div>
-                <div class="col-xs-9 gm_section-offer__content-container">
-
+                <div class="col-xs-12 gm_section-offer__content-container">
+                    <table>
+                        <tbody id="offerTable">
+                            <tr>
+                                <th>ID</th>
+                                <th>Technologies</th>
+                                <th>Status</th>
+                                <th>Volume (MWh)</th>
+                                <th>Traded volume (MWh)</th>
+                                <th>Price (€)</th>
+                                <th>Origins</th>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
                 </div>
 
             </section>
