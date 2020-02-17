@@ -963,7 +963,7 @@ ul {
 .gm_section-auction__country-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 16px -4px 0;
+  margin: 16px -8px 0;
   color: #7A7A7A;
   font-size: 14px; }
 
@@ -971,7 +971,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4px; }
+  padding: 8px; }
   .gm_section-auction__country img {
     margin-bottom: 4px;
     border-radius: 100%;
@@ -1016,8 +1016,10 @@ ul {
 .gm_section-offers__traded-volume__is-empty:before {
   content: "-"; }
 
-.gm_section-offers__technologies img {
-  margin-right: 4px; }
+.gm_section-offers__technologies {
+  padding-right: 0 !important; }
+  .gm_section-offers__technologies img {
+    margin-right: 4px; }
 
 .gm_section-offers__country {
   display: flex;

@@ -116,7 +116,7 @@ function createOffers(){
         var icon = document.createElement("IMG");
         icon.setAttribute("src", "assets/icon/icon--" + offer.technologies + ".svg");
         icon.setAttribute("width", "12");
-        icon.setAttribute("height", "18");
+        icon.setAttribute("height", "14");
         icon.setAttribute("alt", "Icon " + offer.technologies + "energy");
         //Put the flag img before the first child of the parent(= document.getElementById(countryName))
         tableDataElement.prepend(icon);

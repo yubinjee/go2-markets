@@ -237,7 +237,7 @@ ul {
 .gm_section-auction__country-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 16px -4px 0;
+    margin: 16px -8px 0;
     color: $middledarkgrey;
     font-size: $fontSizeSmall;
 }
@@ -245,7 +245,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4px;
+    padding: 8px;
     img {
         margin-bottom: 4px;
         border-radius: 100%;
@@ -304,6 +304,7 @@ ul {
     }
 }
 .gm_section-offers__technologies {
+    padding-right: 0 !important;
     img {
         margin-right: 4px;
     }
