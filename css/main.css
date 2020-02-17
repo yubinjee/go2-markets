@@ -815,6 +815,12 @@ ul {
 .gm_hr {
   border-bottom: 1px solid #CaCaCa; }
 
+.is--right-aligned {
+  text-align: right !important; }
+
+.is--center-aligned {
+  text-align: center !important; }
+
 .gm_header {
   display: flex;
   align-items: center;
@@ -868,6 +874,21 @@ ul {
   overflow: hidden;
   margin-left: 16px; }
 
+.gm_status {
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px; }
+  .gm_status.is--disabled {
+    color: #464646;
+    background: #CaCaCa; }
+  .gm_status.is--active {
+    color: #6DA544;
+    background: #ECF5E6; }
+  .gm_status.is--pending {
+    color: #F58B00;
+    background: #F8EAD8; }
+
 .gm_section-auction {
   margin-top: 80px; }
 
@@ -882,13 +903,6 @@ ul {
   margin: 0 -8px; }
   .gm_section-auction__brief-information p {
     margin: 0 8px; }
-
-.gm_status {
-  font-weight: 600;
-  color: #464646;
-  background: #CaCaCa;
-  padding: 2px 8px;
-  border-radius: 6px; }
 
 .gm_section-auction__headline {
   margin-top: 16px; }
@@ -970,6 +984,52 @@ ul {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05); }
+  .gm_section-offer h2 {
+    font-size: 24px; }
+  .gm_section-offer table {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse; }
+  .gm_section-offer tr {
+    border-top: 1px solid #e2e2e2; }
+  .gm_section-offer th {
+    font-size: 14px;
+    color: #7A7A7A;
+    font-weight: 500;
+    text-align: left; }
+  .gm_section-offer td, .gm_section-offer th {
+    padding: 24px 16px 24px 0;
+    /*width: calc(100% * 2 / 12);
+    &:first-child, &:last-child {
+        width: calc(100% * 1 / 12);
+    }*/ }
+    .gm_section-offer td:last-child, .gm_section-offer th:last-child {
+      padding-left: calc(100% * 1 / 12); }
+  .gm_section-offer .col-xs-1, .gm_section-offer .col-xs-2 {
+    float: none; }
+
+.gm_section-offers__traded-volume {
+  font-weight: 600; }
+
+.gm_section-offers__traded-volume__is-empty:before {
+  content: "-"; }
+
+.gm_section-offers__technologies img {
+  margin-right: 4px; }
+
+.gm_section-offers__country {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  color: #7A7A7A;
+  font-size: 14px; }
+  .gm_section-offers__country img {
+    margin-bottom: 4px;
+    border-radius: 100%;
+    border: 1px solid #e2e2e2; }
+
+.gm_section-offers__status-container {
+  padding-right: 0 !important; }
 
 .gm_footer {
   background: white;

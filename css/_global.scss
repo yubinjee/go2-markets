@@ -60,6 +60,12 @@ ul {
 .gm_hr {
     border-bottom: 1px solid $grey;
 }
+.is--right-aligned {
+    text-align: right !important;
+}
+.is--center-aligned {
+    text-align: center !important;
+}
 
 ///////////////////////////////// HEADER /////////////////////////////////
 .gm_header {
@@ -119,6 +125,24 @@ ul {
     overflow: hidden;
     margin-left: 16px;
 }
+.gm_status {  
+    font-weight: 600;   
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: $fontSizeSmall;
+    &.is--disabled {
+        color: $darkgrey;
+        background: $grey;
+    }
+    &.is--active {
+        color: $green;
+        background: $middlelightgreen;
+    }
+    &.is--pending {
+        color: $orange;
+        background: $lightorange;
+    }
+}
 
 ///////////////////////////////// SECTION AUCTION /////////////////////////////////
 .gm_section-auction {
@@ -136,13 +160,6 @@ ul {
     p {
         margin: 0 8px;
     }
-}
-.gm_status {  
-    font-weight: 600;
-    color: $darkgrey;
-    background: $grey;
-    padding: 2px 8px;
-    border-radius: 6px;
 }
 .gm_section-auction__headline {
     margin-top: 16px;
@@ -244,6 +261,65 @@ ul {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    h2 {
+        font-size: $headingThree;
+    }
+    table {
+        margin-top: 40px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    tr {
+        border-top: 1px solid $middlelightgrey;
+    }
+    th {
+        font-size: 14px;
+        color: #7A7A7A;
+        font-weight: 500;
+        text-align: left;
+    }
+    td, th {
+        padding: 24px 16px 24px 0;
+        &:last-child {
+            padding-left: calc(100% * 1 / 12);
+        }
+        /*width: calc(100% * 2 / 12);
+        &:first-child, &:last-child {
+            width: calc(100% * 1 / 12);
+        }*/
+    }
+    .col-xs-1, .col-xs-2 {
+        float: none;
+    }
+}
+.gm_section-offers__traded-volume {
+    font-weight: 600;
+}
+.gm_section-offers__traded-volume__is-empty {
+    &:before {
+        content: "-";
+    }
+}
+.gm_section-offers__technologies {
+    img {
+        margin-right: 4px;
+    }
+}
+.gm_section-offers__country {
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    padding: 4px;
+    color: $middledarkgrey;
+    font-size: $fontSizeSmall;
+    img {
+        margin-bottom: 4px;
+        border-radius: 100%;
+        border: 1px solid $middlelightgrey;
+    }
+}
+.gm_section-offers__status-container {
+    padding-right: 0 !important;
 }
 
 ///////////////////////////////// FOOTER /////////////////////////////////

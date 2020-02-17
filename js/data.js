@@ -56,7 +56,7 @@ var data = {
             "origins": [
                 "BE"
             ],
-            "price": "23.0000",
+            "price": "230,000",
             "ref": "0FG9VSR4E5FL",
             "technologies": [
                 "Hydro"
@@ -68,19 +68,19 @@ var data = {
             "origins": [
                 "CY"
             ],
-            "price": "666.0000",
+            "price": "6,660,000",
             "ref": "RWM88CPRI9H1",
             "technologies": [
                 "Hydro"
             ],
-            "volume": "7676"
+            "volume": "7,676"
         },
         {
             "id": 219,
             "origins": [
                 "BE"
             ],
-            "price": "3212.0000",
+            "price": "32,120,000",
             "ref": "140MBONPELWM",
             "technologies": [
                 "Hydro"
@@ -92,7 +92,7 @@ var data = {
             "origins": [
                 "BE"
             ],
-            "price": "13232.0000",
+            "price": "132,320,000	",
             "ref": "LPE2PRWUTW8Z",
             "technologies": [
                 "Hydro"
@@ -104,7 +104,7 @@ var data = {
             "origins": [
                 "BE"
             ],
-            "price": "13232.0000",
+            "price": "132,320,000	",
             "ref": "824TNR2I5MU9",
             "technologies": [
                 "Hydro"
@@ -122,7 +122,7 @@ var data = {
                 "origins": [
                     "BE"
                 ],
-                "price": "23.0000",
+                "price": "230,000",
                 "ref": "0FG9VSR4E5FL",
                 "technologies": [
                     "Hydro"
@@ -130,7 +130,7 @@ var data = {
                 "volume": "23"
             },
             "ref": "KEZX657VGANC",
-            "tx_volume": "23"
+            "tx_volume": "12"
         },
         {
             "auction_id": 203,
@@ -140,7 +140,7 @@ var data = {
                 "origins": [
                     "CH"
                 ],
-                "price": "23.0000",
+                "price": "230,000",
                 "ref": "2G81GXPEP1C3",
                 "technologies": [
                     "Hydro"
@@ -158,7 +158,7 @@ var data = {
                 "origins": [
                     "CY"
                 ],
-                "price": "666.0000",
+                "price": "6,660,000",
                 "ref": "RWM88CPRI9H1",
                 "technologies": [
                     "Hydro"
@@ -166,7 +166,7 @@ var data = {
                 "volume": "2"
             },
             "ref": "6M76LFIWM4HX",
-            "tx_volume": "7676"
+            "tx_volume": "7,676"
         },
         {
             "auction_id": 203,
@@ -176,7 +176,7 @@ var data = {
                 "origins": [
                     "BE"
                 ],
-                "price": "3212.0000",
+                "price": "32,120,000",
                 "ref": "140MBONPELWM",
                 "technologies": [
                     "Hydro"
@@ -186,7 +186,7 @@ var data = {
             "ref": "PRE2KN1Z38GC",
             "tx_volume": "23"
         },
-        {
+        /*{
             "auction_id": 203,
             "id": 26,
             "offer": {
@@ -194,7 +194,7 @@ var data = {
                 "origins": [
                     "BE"
                 ],
-                "price": "13232.0000",
+                "price": "132,320,000	",
                 "ref": "LPE2PRWUTW8Z",
                 "technologies": [
                     "Hydro"
@@ -203,7 +203,7 @@ var data = {
             },
             "ref": "0N6GLG0EMNCJ",
             "tx_volume": "12"
-        },
+        },*/
         {
             "auction_id": 203,
             "id": 28,
@@ -212,7 +212,7 @@ var data = {
                 "origins": [
                     "BE"
                 ],
-                "price": "13232.0000",
+                "price": "132,320,000	",
                 "ref": "824TNR2I5MU9",
                 "technologies": [
                     "Hydro"
