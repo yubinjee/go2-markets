@@ -88,7 +88,7 @@ function createOffers(){
         var tableDataElement = document.createElement("td");
         tableDataElement.classList.add("gm_section-offers__status-container");
         //First, check if the current offer is in the transactions array
-        //For this part I had some help from other developer
+        //For this part I had some help from another developer
         var offerIDIsInTransactions = data.transactions.find(function (currentTransaction) {
             return currentTransaction.offer.id === offer.id
             });
@@ -120,8 +120,6 @@ function createOffers(){
         icon.setAttribute("alt", "Icon " + offer.technologies + "energy");
         //Put the flag img before the first child of the parent(= document.getElementById(countryName))
         tableDataElement.prepend(icon);
-
-
 
         //Volume
         var tableDataElement = document.createElement("td");
@@ -178,7 +176,6 @@ function createOffers(){
             document.getElementById(countryName + " " + offer.id).prepend(flag);
         } 
     
-
     }
 
 }
