@@ -992,6 +992,8 @@ ul {
     border-collapse: collapse; }
   .gm_section-offer tr {
     border-top: 1px solid #e2e2e2; }
+    .gm_section-offer tr:last-child {
+      border-bottom: 1px solid #e2e2e2; }
   .gm_section-offer th {
     font-size: 14px;
     color: #7A7A7A;
@@ -1033,12 +1035,12 @@ ul {
 
 .gm_footer {
   background: white;
-  height: 160px;
-  padding: 40px;
-  display: flex;
+  height: 120px;
   align-items: flex-end;
-  justify-content: center;
   font-size: 14px;
   color: #CaCaCa; }
+
+.gm_footer__license-notice {
+  margin-bottom: 24px; }
 
 /*# sourceMappingURL=main.css.map */

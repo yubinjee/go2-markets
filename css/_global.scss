@@ -271,6 +271,9 @@ ul {
     }
     tr {
         border-top: 1px solid $middlelightgrey;
+        &:last-child {
+            border-bottom: 1px solid $middlelightgrey;
+        }
     }
     th {
         font-size: 14px;
@@ -326,11 +329,12 @@ ul {
 
 .gm_footer {
     background: white;
-    height: 160px;
-    padding: 40px;
-    display:flex;
+    height: 120px;
     align-items: flex-end;
-    justify-content: center;
+    //justify-content: center;
     font-size: $fontSizeSmall;
     color: $grey;
+}
+.gm_footer__license-notice {
+    margin-bottom: 24px;
 }
