@@ -84,28 +84,28 @@ function createOffers(){
         tableDataElement.classList.add("gm_section-offers__id");
         document.getElementById(offer.id).appendChild(tableDataElement);
 
-                //Status
-                var tableDataElement = document.createElement("td");
-                tableDataElement.classList.add("gm_section-offers__status-container");
-                //First, check if the current offer is in the transactions array
-                var offerIDIsInTransactions = data.transactions.find(function (currentTransaction) {
-                    return currentTransaction.offer.id === offer.id
-                  });
-                //If yes, write Traded, otherwise write Pending
-                if (offerIDIsInTransactions) {
-                    //tableDataElement.innerHTML = "Traded"
-                    var createSpanElement = document.createElement("span");
-                    createSpanElement.innerHTML = "Traded";
-                    createSpanElement.classList.add("gm_status", "is--active");
-                    tableDataElement.appendChild(createSpanElement);
-                } 
-                else {
-                    var createSpanElement = document.createElement("span");
-                    createSpanElement.innerHTML = "Pending";
-                    createSpanElement.classList.add("gm_status", "is--pending");
-                    tableDataElement.appendChild(createSpanElement);
-                }
-                document.getElementById(offer.id).appendChild(tableDataElement);
+        //Status
+        var tableDataElement = document.createElement("td");
+        tableDataElement.classList.add("gm_section-offers__status-container");
+        //First, check if the current offer is in the transactions array
+        //For this part I had some help from other developer
+        var offerIDIsInTransactions = data.transactions.find(function (currentTransaction) {
+            return currentTransaction.offer.id === offer.id
+            });
+        //If yes, write Traded, otherwise write Pending
+        if (offerIDIsInTransactions) {
+            var createSpanElement = document.createElement("span");
+            createSpanElement.innerHTML = "Traded";
+            createSpanElement.classList.add("gm_status", "is--active");
+            tableDataElement.appendChild(createSpanElement);
+        } 
+        else {
+            var createSpanElement = document.createElement("span");
+            createSpanElement.innerHTML = "Pending";
+            createSpanElement.classList.add("gm_status", "is--pending");
+            tableDataElement.appendChild(createSpanElement);
+        }
+        document.getElementById(offer.id).appendChild(tableDataElement);
 
         //Technologies
         var tableDataElement = document.createElement("td");
